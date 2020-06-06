@@ -6,9 +6,9 @@ import styles from './index.module.scss'
  * @text
  */
 
-const CTA = ({ link, text }) => {
+const CTA = ({ link, text, basePath = "/" }) => {
   return (
-    <Link href="/[pid]" as={`${link}`}>
+    <Link scroll={true} href={`${basePath}[pid]`} as={`${link}`}>
       <a className={styles.cta}>{text}</a>
     </Link>
   );

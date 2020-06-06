@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
   const data = await api.json();
 
   const paths = data.map((page) => ({
-    params: { pid: page.id.toString() },
+    params: { pid: page.slug.toString() },
   }));
 
   return { paths, fallback: false };
