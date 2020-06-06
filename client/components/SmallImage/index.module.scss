@@ -1,0 +1,12 @@
+.SmallImage {
+  display: flex;
+  flex-direction: row;
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.left {
+    justify-content: flex-start;
+  }
+}

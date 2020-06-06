@@ -1,0 +1,15 @@
+.imageText {
+  display: flex;
+
+  &.horizontal {
+    flex-direction: row;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  &.vertical {
+    flex-direction: column;
+  }
+}
