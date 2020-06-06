@@ -32,11 +32,21 @@ npm run develop
 ```shell
 cd client
 npm i
+```
+
+Create a file `.env.local` in the client folder. Add it `NEXT_PUBLIC_API_PATH='http://localhost:1337'`. If you use another back adress, put it here.
+
+```
 npm run dev
 ```
 
-Add this line in 
-
 Then, go to [localhost](http://localhost:3000/).
 
-The page will be empty
+// TODO : Give a public well-filled API to make test website generator.
+
+The page will be empty. You must then register on the form at `http://localhost:1337` to be the admin.  
+You'll be in a dashboard. Go to "Rôles and autorisations", check `find` and `findOne` in `Page` section, and check `find` in `Route` section.
+
+Then, go to the `Page` page. For this, click in the `Page` word, under `Collection type`, at the left top corner of your screen.
+
+You can now add your pages, with pre-done blocks.
