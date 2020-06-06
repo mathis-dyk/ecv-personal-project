@@ -16,3 +16,27 @@ The concept is simple :
 The front is created with NextJS, wich allows me to create reusable components. React could do the same, but givent that it's for real clients who wants visibility, I wants to have the maximum of SEO on the websites I'm generating. NextJS got an SSR option, perfect to have the SEO that React doesn't have.
 
 The backend is Strapi. Not a realchallenge, for an educational project, but I wanted to (really) test it for a while, and it was the perfect opportunity.
+
+## Installation
+
+### Server
+
+```shell
+cd server
+npm i
+npm run develop
+```
+
+### Client
+
+```shell
+cd client
+npm i
+npm run dev
+```
+
+Add this line in 
+
+Then, go to [localhost](http://localhost:3000/).
+
+The page will be empty
