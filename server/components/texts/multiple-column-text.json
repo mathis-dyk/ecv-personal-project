@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_texts_multiple_column_texts",
+  "info": {
+    "name": "multiple-column-text",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "columns": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

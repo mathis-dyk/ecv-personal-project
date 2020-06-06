@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_titles_simple_titles",
+  "info": {
+    "name": "simple-title",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

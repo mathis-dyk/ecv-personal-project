@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_main_image_texts",
+  "info": {
+    "name": "image-text",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "private": false,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ux.cta"
+    },
+    "mode": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

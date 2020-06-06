@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_main_routes",
+  "info": {
+    "name": "route",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

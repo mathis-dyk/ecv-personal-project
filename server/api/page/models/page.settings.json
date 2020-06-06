@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "titles.subtitle",
+        "ux.cta",
+        "main.image-text",
+        "titles.simple-title",
+        "texts.simple-text",
+        "texts.multiple-column-text",
+        "images.full-image",
+        "images.small-image",
+        "images.gallerie"
+      ]
+    }
+  }
+}

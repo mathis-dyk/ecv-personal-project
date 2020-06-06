@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_images_galleries",
+  "info": {
+    "name": "gallerie",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "picture": {
+      "type": "component",
+      "repeatable": true,
+      "component": "images.full-image"
+    }
+  }
+}

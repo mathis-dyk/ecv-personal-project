@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_texts_simple_texts",
+  "info": {
+    "name": "simple-text",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

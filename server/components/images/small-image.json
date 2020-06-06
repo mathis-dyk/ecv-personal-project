@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_images_small_images",
+  "info": {
+    "name": "small-image",
+    "icon": "file-image"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "percent": {
+      "type": "integer"
+    },
+    "side": {
+      "type": "boolean"
+    }
+  }
+}
