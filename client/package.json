@@ -8,12 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "classnames": "^2.2.6",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-slick": "^0.26.1",
     "sass": "^1.26.7",
+    "showdown": "^1.9.1",
     "slick-carousel": "^1.8.1"
   }
 }

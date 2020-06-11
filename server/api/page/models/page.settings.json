@@ -31,6 +31,10 @@
         "main.present-blocks",
         "images.slider"
       ]
+    },
+    "inHeader": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

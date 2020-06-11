@@ -11,11 +11,15 @@ const SmallImage = ({ data }) => {
 
   return (
     <div className={className}>
-      <img
-        src={`${process.env.NEXT_PUBLIC_API_PATH}${img.url}`}
-        alt=""
-        style={{ width: percent + "%" }}
-      />
+      {
+        img && (
+          <img
+            src={`${process.env.NEXT_PUBLIC_API_PATH}${img.url}`}
+            alt=""
+            style={{ width: percent + "%" }}
+          />
+        )
+      }
     </div>
   );
 }

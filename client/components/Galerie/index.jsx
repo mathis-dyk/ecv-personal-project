@@ -9,7 +9,7 @@ const Galerie = ({ data }) => {
         picture.map((picture, index) => (
           <div key={index}
             style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_API_PATH}${picture.img.url})`,
+              backgroundImage: `url(${process.env.NEXT_PUBLIC_API_PATH}${picture.img.formats.small.url})`,
             }}
             className="picture"
           ></div>

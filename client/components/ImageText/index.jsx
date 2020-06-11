@@ -19,11 +19,15 @@ const ImageText = ({ data }) => {
         <p>{text}</p>
         { cta && <CTA link={cta.link} text={cta.text} />}
       </div>
-      <img
-        style={{ width: imgSize + "%" }}
-        src={`${process.env.NEXT_PUBLIC_API_PATH}${image.url}`}
-        alt="Some descriptive text"
-      />
+      {
+        image && (
+          <img
+            style={{ width: imgSize + "%" }}
+            src={`${process.env.NEXT_PUBLIC_API_PATH}${image.formats.medium.url}`}
+            alt="Some descriptive text"
+          />
+        )
+      }
     </section>
   );
 }

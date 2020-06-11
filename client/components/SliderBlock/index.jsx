@@ -27,7 +27,7 @@ class SliderBlock extends Component {
         <Slider {...settings}>
           {
             images.map(image => (
-              <div>
+              <div key={image.id}>
                 <img src={`${process.env.NEXT_PUBLIC_API_PATH}${image.url}`} alt="" />
               </div>
             ))
