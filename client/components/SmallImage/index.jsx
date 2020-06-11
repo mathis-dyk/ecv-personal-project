@@ -1,12 +1,12 @@
-import styles from './index.module.scss'
+import './index.scss'
 import cn from 'classnames'
 
 const SmallImage = ({ data }) => {
   const { img, percent, side } = data
 
-  let className = cn(styles.SmallImage, {
-    [styles.right]: side === 1,
-    [styles.left]: side === 0,
+  let className = cn("SmallImage", {
+    ["right"]: side === 1,
+    ["left"]: side === 0,
   });
 
   return (

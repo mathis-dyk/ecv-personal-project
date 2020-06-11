@@ -1,10 +1,16 @@
 import Link from 'next/link'
-import styles from './index.module.scss'
+import './index.scss'
+import showdown from 'showdown'
+const converter = new showdown.Converter()
 
 const SimpleText = ({ data }) => {
-  const { content } = data
+  const { content, position } = data
 
-  return <p className={styles.simpleText}>{content}</p>;
+  return (
+  <div className={`simpleText ${position}`}
+    dangerouslySetInnerHTML={{ __html: converter.makeHtml(content) }}
+  />
+  )
 }
 
 export default SimpleText;

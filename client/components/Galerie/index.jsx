@@ -1,17 +1,17 @@
-import styles from './index.module.scss'
+import './index.scss'
 
 const Galerie = ({ data }) => {
   const { picture } = data
   
   return (
-    <section className={styles.Galerie}>
+    <section className="Galerie">
       {
         picture.map((picture, index) => (
           <div key={index}
             style={{
               backgroundImage: `url(${process.env.NEXT_PUBLIC_API_PATH}${picture.img.url})`,
             }}
-            className={styles.picture}
+            className="picture"
           ></div>
         ))
       }

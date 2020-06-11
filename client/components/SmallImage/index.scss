@@ -1,6 +1,9 @@
 .SmallImage {
   display: flex;
   flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
 
   &.right {
     justify-content: flex-end;

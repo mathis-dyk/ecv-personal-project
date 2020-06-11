@@ -1,22 +1,26 @@
 import cn from 'classnames'
-import styles from './index.module.scss'
+import './index.scss'
 import CTA from '../CTA'
 
 const ImageText = ({ data }) => {
-  const { cta, image, text, mode } = data
+  const { cta, image, text, mode, imgSize, title, revert } = data
 
-  let className = cn(styles.imageText, {
-    [styles.vertical]: mode === false,
-    [styles.horizontal]: mode === true,
+  let className = cn("imageText", {
+    ["vertical"]: mode === false,
+    ["horizontal"]: mode === true,
+    ["revert"]: revert === true,
+    ["unrevert"]: revert === false,
   });
 
   return (
     <section className={className}>
-      <div className={styles.textPart}>
+      <div className="textPart">
+        <h2>{ title }</h2>
         <p>{text}</p>
-        <CTA link={cta.link} text={cta.text} />
+        { cta && <CTA link={cta.link} text={cta.text} />}
       </div>
       <img
+        style={{ width: imgSize + "%" }}
         src={`${process.env.NEXT_PUBLIC_API_PATH}${image.url}`}
         alt="Some descriptive text"
       />

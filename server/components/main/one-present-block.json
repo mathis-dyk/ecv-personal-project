@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_main_one_present_blocks",
+  "info": {
+    "name": "OnePresentBlock",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

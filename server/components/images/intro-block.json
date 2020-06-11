@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_images_intro_blocks",
+  "info": {
+    "name": "IntroBlock",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ux.cta"
+    }
+  }
+}

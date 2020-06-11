@@ -1,0 +1,47 @@
+@import 'assets/scss/index.scss';
+
+.imageText {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  color: $text;
+
+  h2 {
+    color: $black;
+  }
+
+  &.horizontal {
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      height: auto;
+      margin-left: 50px;
+    }
+
+    &.revert {
+      flex-direction: row-reverse;
+
+      img {
+        margin-left: unset;
+        margin-right: 50px;
+      }
+    }
+  }
+
+  &.vertical {
+    flex-direction: column;
+
+    &.revert {
+      flex-direction: column-reverse;
+    }
+  }
+
+  a {
+    margin-top: 20px;
+    display: inline-block;
+    color: $green;
+  }
+}

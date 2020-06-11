@@ -1,0 +1,22 @@
+@import 'assets/scss/index.scss';
+
+.Galerie {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  padding-right: 10%; 
+
+  .picture {
+    margin-bottom: 50px;
+    width: 20%;
+    margin-right: 6.6%;
+    padding-bottom: 20%;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s ease-out;
+
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import '../assets/scss/index.scss';
+
+.page {
+  @include theme-colors($theme: default);
+
+  &.red {
+    @include theme-colors($theme: red);
+  }
+
+  &.blue {
+    @include theme-colors($theme: blue);
+  }
+
+  &.black {
+    @include theme-colors($theme: black);
+  }
+
+}

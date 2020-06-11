@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@700&display=swap');
+
+// Blocs
+
 html,
 body {
   padding: 0;
@@ -30,7 +34,6 @@ img {
 
 // TRUE SCSS
 .container {
-  width: 80%;
   margin: auto;
 }
 
@@ -52,4 +55,80 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.timeNew {
+  font-family: 'Lato', sans-serif;
+
+  h1, h2, h3, h4, h5, a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+}
+
+.arial {
+  font-family: 'Arial';
+}
+
+.courierNew {
+  font-family: 'Courier New';
+}
+
+$red: #f50029cb;
+$black: #121212;
+$text: rgb(130, 130, 130);
+$white: white;
+$green: rgb(0, 171, 132);
+$blue: blue;
+
+@mixin theme-colors($theme: red) {
+  @if $theme == red {
+    background-color: $red;
+
+    h1, h2, a, strong {
+      color: $red;
+    }
+  }
+  @elseif $theme == blue {
+    background-color: $blue;
+    color: white;
+
+    h1, h2 {
+      color: white;
+    }
+  }
+  @elseif $theme == black {
+    background-color: $black;
+    color:$white;
+
+    h1, h2, a, strong {
+      color: $red;
+    }
+  }
+  @elseif $theme == default {
+    background-color: $white;
+    color: $black;
+  }
+  
+  @else {
+    background-color: $white;
+    color: $black;
+
+    h1, h2 {
+      color: $black;
+    }
+  }
+}
+
+.center {
+  text-align: center;
+  }
+
+.left {
+  text-align: left;
+  }
+
+.right {
+  taxt-align: right;
 }

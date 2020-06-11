@@ -30,6 +30,16 @@
     "mode": {
       "type": "boolean",
       "default": false
+    },
+    "imgSize": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "revert": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

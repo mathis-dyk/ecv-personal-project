@@ -1,13 +1,16 @@
-import styles from './index.module.scss'
+import React, { useState } from 'react'
+import './index.scss'
+import showdown from 'showdown'
+const converter = new showdown.Converter()
 
 const MultipleColumnText = ({ data }) => {
   const { columns, content } = data
 
   return (
-    <p
-      className={styles.MultipleColumnText}
+    <div
+      className="MultipleColumnText"
       style={{ columnCount: columns }}
-      dangerouslySetInnerHTML={{ __html: content }}
+      dangerouslySetInnerHTML={{__html: converter.makeHtml(content) }}
     />
   );
 };

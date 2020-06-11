@@ -7,6 +7,9 @@ import MultipleColumnText from "../components/MultipleColumnText";
 import FullImage from '../components/FullImage';
 import SmallImage from "../components/SmallImage";
 import Galerie from "../components/Galerie";
+import IntroBlock from "../components/IntroBlock";
+import PresentBlock from '../components/PresentBlock';
+import SliderBlock from '../components/SliderBlock';
 
 const blocList = {
   "titles.simple-title": SimpleTitle,
@@ -17,6 +20,9 @@ const blocList = {
   "texts.simple-text": SimpleText,
   "images.gallerie": Galerie,
   "images.small-image": SmallImage,
+  "images.intro-block": IntroBlock,
+  "main.present-blocks": PresentBlock,
+  "images.slider": SliderBlock,
   "CTA": CTA
 }
 

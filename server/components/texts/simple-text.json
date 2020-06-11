@@ -9,6 +9,14 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "left",
+        "right"
+      ]
     }
   }
 }

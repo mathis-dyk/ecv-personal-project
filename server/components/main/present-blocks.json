@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_main_present_blocks",
+  "info": {
+    "name": "PresentBlocks",
+    "icon": "clone"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "text"
+    },
+    "OnePresentBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main.one-present-block"
+    }
+  }
+}

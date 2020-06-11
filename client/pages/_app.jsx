@@ -1,5 +1,8 @@
-import "../assets/scss/index.scss";
+// import App from 'next/app'
+import '../assets/scss/index.scss'
 
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return  <Component {...pageProps} />
 }
+
+export default MyApp

@@ -1,4 +1,4 @@
-import styles from './index.module.scss'
+import './index.scss'
 
 const FullImage = ({ data }) => {
   const { img } = data
@@ -7,7 +7,7 @@ const FullImage = ({ data }) => {
     <img
       src={`${process.env.NEXT_PUBLIC_API_PATH}${img.url}`}
       alt={`${img.alternativeText}`}
-      className={styles.FullImage}
+      className="FullImage"
     />
   );
 }

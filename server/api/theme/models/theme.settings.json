@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "name": "Theme"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "colors": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "blue",
+        "red",
+        "black"
+      ],
+      "default": "default"
+    },
+    "typos": {
+      "type": "enumeration",
+      "enum": [
+        "timeNew",
+        "arial",
+        "courierNew"
+      ]
+    },
+    "getHeader": {
+      "type": "boolean",
+      "default": true
+    },
+    "maxWidth": {
+      "type": "integer",
+      "default": 80
+    }
+  }
+}

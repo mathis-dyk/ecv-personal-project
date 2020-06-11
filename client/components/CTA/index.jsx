@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from './index.module.scss'
+import './index.scss'
 
 /**
  * @link
@@ -9,7 +9,7 @@ import styles from './index.module.scss'
 const CTA = ({ link, text, basePath = "/" }) => {
   return (
     <Link scroll={true} href={`${basePath}[pid]`} as={`${link}`}>
-      <a className={styles.cta}>{text}</a>
+      <a className="cta">{text}</a>
     </Link>
   );
 }

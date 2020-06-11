@@ -1,0 +1,29 @@
+section.present-block {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+
+  > p {
+    margin-bottom: 50px;
+  }
+
+  .presentBlockElements {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+
+    .presentBlockElement {
+      width: 30%;
+      margin-right: 3.3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+}

@@ -26,7 +26,10 @@
         "texts.multiple-column-text",
         "images.full-image",
         "images.small-image",
-        "images.gallerie"
+        "images.gallerie",
+        "images.intro-block",
+        "main.present-blocks",
+        "images.slider"
       ]
     }
   }
